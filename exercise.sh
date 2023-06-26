@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+rm -f bazel-out/darwin-fastbuild/bin/game/hello
+
 bazel build '...'
 
 # bazel build --platforms //platforms:a2600 '...'
